@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - COREX IT SOLUTIONS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
+    <style>
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .services-nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .services-nav .btn {
+                width: 100%;
+                text-align: center;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <video class="video-background" autoplay muted loop playsinline poster="images/video-poster.jpg">
+        <source src="images/background-video.mp4" type="video/mp4">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-server-room-with-moving-lights-43194-large.mp4" type="video/mp4">
+    </video>
+
+    <header>
+        <div class="container header-container">
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <a href="index.html" class="logo">
+                    <img src="images/logo-header.png" alt="COREX IT SOLUTIONS" style="height: 60px; width: auto;">
+                </a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Our Services</h1>
+                <p>Comprehensive IT solutions for security, networking, infrastructure, and more</p>
+            </div>
+        </section>
+
+        <section class="services-nav-section">
+            <div class="container">
+                <div class="services-nav">
+                    <a href="#security" class="btn btn-light">Security Systems</a>
+                    <a href="#networking" class="btn btn-light">Networking & IT</a>
+                    <a href="#av" class="btn btn-light">Audio-Visual</a>
+                    <a href="#cabling" class="btn btn-light">Structured Cabling</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Security Systems -->
+        <section id="security">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Security Systems</h2>
+                    <p>Complete security solutions for your business</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-img"><img src="images/cctv.jpg" alt="CCTV Systems"></div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fas fa-video"></i></div>
+                            <h3>CCTV Systems</h3>
+                            <p>Professional installation of CCTV cameras for comprehensive surveillance.</p>
+                            <a href="#" class="btn view-details" data-service="cctv">View Details</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img"><img src="images/gate-barrier.jpg" alt="Gate Barrier Systems"></div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fas fa-gate"></i></div>
+                            <h3>Gate Barriers</h3>
+                            <p>Automatic gate barrier systems for controlled access.</p>
+                            <a href="#" class="btn view-details" data-service="gate-barrier">View Details</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img"><img src="images/biometric.jpg" alt="Biometric Access"></div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fas fa-fingerprint"></i></div>
+                            <h3>Biometric Access</h3>
+                            <p>Advanced biometric systems for secure access control.</p>
+                            <a href="#" class="btn view-details" data-service="biometric">View Details</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img"><img src="images/anpr.jpg" alt="ANPR Systems"></div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fas fa-car"></i></div>
+                            <h3>ANPR Systems</h3>
+                            <p>Automatic Number Plate Recognition for vehicle tracking.</p>
+                            <a href="#" class="btn view-details" data-service="anpr">View Details</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img"><img src="images/driver-id.jpg" alt="Driver Identification"></div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fas fa-id-card"></i></div>
+                            <h3>Driver Identification</h3>
+                            <p>Advanced driver identification for transportation security.</p>
+                            <a href="#" class="btn view-details" data-service="driver-id">View Details</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img"><img src="images/under-vehicle.jpg" alt="Under Vehicle Scanner"></div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fas fa-search"></i></div>
+                            <h3>Under Vehicle Scanner</h3>
+                            <p>High-tech scanning for detecting hidden threats.</p>
+                            <a href="#" class="btn view-details" data-service="under-vehicle">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Networking & IT Infrastructure -->
+        <section id="networking" class="services-alt-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Networking & IT Infrastructure</h2>
+                    <p>Professional networking solutions for your business</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-img"><img src="images/computer-service.jpg" alt="Computer & Laptop Service"></div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fas fa-laptop"></i></div>
+                            <h3>Computer & Laptop Service</h3>
+                            <p>Repair, maintenance, and troubleshooting.</p>
+                            <a href="#" class="btn view-details" data-service="computer-service">View Details</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img"><img src="images/printer-service.jpg" alt="Printer Service"></div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fas fa-print"></i></div>
+                            <h3>Printer Service</h3>
+                            <p>Installation, maintenance, and repair.</p>
+                            <a href="#" class="btn view-details" data-service="printer-service">View Details</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img"><img src="images/router-switch.jpg" alt="Routers & Switches"></div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+                            <h3>Routers, Switches & Firewalls</h3>
+                            <p>Installation and configuration of networking equipment.</p>
+                            <a href="#" class="btn view-details" data-service="router-switch">View Details</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img"><img src="images/nas-storage.jpg" alt="NAS Storage"></div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fas fa-hdd"></i></div>
+                            <h3>NAS Storage</h3>
+                            <p>Centralized data management and backup.</p>
+                            <a href="#" class="btn view-details" data-service="nas-storage">View Details</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img"><img src="images/pbx.jpg" alt="PBX Systems"></div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fas fa-phone-alt"></i></div>
+                            <h3>PBX Systems</h3>
+                            <p>Business communication systems (VoIP and traditional).</p>
+                            <a href="#" class="btn view-details" data-service="pbx">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audio-Visual Solutions -->
+        <section id="av">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Audio-Visual Solutions</h2>
+                    <p>Professional AV systems for communication and entertainment</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-img"><img src="images/public-address.jpg" alt="Public Address Systems"></div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                            <h3>Public Address Systems</h3>
+                            <p>Clear announcements and background music.</p>
+                            <a href="#" class="btn view-details" data-service="public-address">View Details</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img"><img src="images/live-streaming.jpg" alt="Live Streaming"></div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fas fa-broadcast-tower"></i></div>
+                            <h3>Live Streaming</h3>
+                            <p>Professional live streaming for events and conferences.</p>
+                            <a href="#" class="btn view-details" data-service="live-streaming">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Structured Cabling -->
+        <section id="cabling" class="services-alt-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Structured Cabling</h2>
+                    <p>High-performance cabling infrastructure</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-img"><img src="images/cat6-cabling.jpg" alt="Cat6 Cabling"></div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fas fa-ethernet"></i></div>
+                            <h3>Cat6 Cabling</h3>
+                            <p>High-speed data transmission up to 10 Gbps.</p>
+                            <a href="#" class="btn view-details" data-service="cat6-cabling">View Details</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img"><img src="images/fiber-cabling.jpg" alt="Fiber Optic Cabling"></div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fas fa-fiber"></i></div>
+                            <h3>Fiber Optic Cabling</h3>
+                            <p>High-bandwidth, long-distance data transmission.</p>
+                            <a href="#" class="btn view-details" data-service="fiber-cabling">View Details</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img"><img src="images/fiber-splicing.jpg" alt="Fiber Splicing"></div>
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fas fa-compress-arrows-alt"></i></div>
+                            <h3>Fiber Splicing</h3>
+                            <p>Precision fusion splicing and termination.</p>
+                            <a href="#" class="btn view-details" data-service="fiber-splicing">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- SERVICE MODAL -->
+    <div class="service-modal" id="serviceModal">
+        <div class="modal-content solid-modal">
+            <div class="modal-header">
+                <h3 id="modalTitle">Service Details</h3>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-img"><img id="modalImage" src="" alt="Service Image"></div>
+                <p id="modalDescription"></p>
+                <div class="modal-features" id="modalFeatures"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>COREX IT SOLUTIONS</h3>
+                    <p>Your trusted partner for comprehensive IT and security solutions in the UAE.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#security">Security Systems</a></li>
+                        <li><a href="services.html#networking">Networking</a></li>
+                        <li><a href="services.html#av">Audio-Visual</a></li>
+                        <li><a href="services.html#cabling">Structured Cabling</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Dubai, UAE</li>
+                        <li><i class="fas fa-phone"></i> +971 4 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@corexitsolutions.ae</li>
+                        <li><i class="fas fa-clock"></i> Sun-Thu: 8:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 COREX IT SOLUTIONS. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/services.js"></script>
+</body>
+</html>
